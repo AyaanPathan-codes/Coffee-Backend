@@ -23,6 +23,9 @@ import Routes from "./routes/user.routes.js"
 
 app.use("/api/v1/users/",Routes)
 
+app.get("/ping", (req, res) => {
+    res.send("pong");
+});
 
 
 
